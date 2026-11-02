@@ -1,0 +1,41 @@
+:root {
+  --sombre: #17141F;
+  --carte: #231F2E;
+  --trait: #2E2940;
+  --creme: #F4F1FA;
+  --gris: #A8A2B8;
+  --corail: #FF6B57;
+}
+* { box-sizing: border-box; }
+html {
+  background: var(--sombre);
+  color: var(--creme);
+  color-scheme: dark;
+  font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+body { margin: 0; }
+.page { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--trait); }
+.nom { display: inline-flex; align-items: center; gap: 0.6rem; color: var(--creme); text-decoration: none; }
+.mot { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+.corail { color: var(--corail); }
+.langue { color: var(--gris); text-decoration: none; font-size: 0.95rem; padding: 0.35rem 0.8rem; border: 1px solid var(--trait); border-radius: 99px; }
+.langue:hover { color: var(--creme); border-color: var(--gris); }
+h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.15; letter-spacing: -0.02em; margin: 2.5rem 0 0.5rem; }
+h2 { font-size: 1.25rem; line-height: 1.3; margin: 2.4rem 0 0.4rem; }
+p, li { max-width: 68ch; }
+li { margin: 0.3rem 0; }
+ul { padding-left: 1.2rem; }
+a { color: var(--corail); text-underline-offset: 0.18em; }
+a:hover { color: var(--creme); }
+.maj { color: var(--gris); font-size: 0.95rem; margin-top: 0; }
+.acompleter { background: var(--corail); color: var(--sombre); padding: 0 0.3em; border-radius: 0.25em; font-weight: 600; }
+.accroche { font-size: 1.25rem; line-height: 1.5; color: var(--creme); }
+.liens { list-style: none; padding: 0; margin: 1.5rem 0; }
+.liens li { margin: 0.5rem 0; }
+footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--trait); display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; font-size: 0.95rem; }
+footer a { color: var(--gris); }
+footer a:hover { color: var(--creme); }
+a:focus-visible { outline: 2px solid var(--corail); outline-offset: 3px; border-radius: 4px; }
+@media (max-width: 480px) { html { font-size: 16px; } }
